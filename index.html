@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiper Cards Transactions</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+   
+  </style>
+</head>
+<body>
+<h1>Cards</h1>
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide card red">Balance: $3,435.43<br>4514 4518<br>VISA</div>
+    <div class="swiper-slide card cyan">Balance: $601.23<br>4512 2120<br>VISA</div>
+    <div class="swiper-slide card orange">Balance: $218.54<br>1212 3232<br>VISA</div>
+    <div class="swiper-slide card yellow">Balance: $1452.31<br>6256 1245<br>VISA</div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+
+<h1>Transactions</h1>
+<div class="transaction"><span class="icon">🍏</span> Apple Store - $64.10 <span>09:43 PM</span></div>
+<div class="transaction"><span class="icon">🎵</span> Spotify - $2.39 <span>05:18 PM</span></div>
+<div class="transaction"><span class="icon">🍕</span> Zomato - $3.05 <span>09:43 PM</span></div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1.5,
+    spaceBetween: 20,
+    pagination: { el: '.swiper-pagination', clickable: true },
+  });
+</script>
+</body>
+</html>
